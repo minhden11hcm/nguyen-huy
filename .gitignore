@@ -1,0 +1,14 @@
+node_modules
+dist/
+tmp/
+out-tsc/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
