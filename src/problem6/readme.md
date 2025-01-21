@@ -144,7 +144,7 @@ This module is responsible for maintaining a live scoreboard that displays the t
 Below is the flowchart that illustrates the execution flow for updating the scoreboard:
 
 ```mermaid
-graph LR
+graph TD
 A@{ shape: circle, label: "Start" } --> B[User Completes Action]
 B[User Completes Action] -->|POST /score/update| C[Backend Server]
 C --> D{Validate Token & Input}
@@ -159,7 +159,7 @@ E --> L
 Below is the flowchart that illustrates the execution flow for registering the user:
 
 ```mermaid
-graph LR
+graph TD
 L@{ shape: circle, label: "Start" } --> A[User Enter information username, email, password]
 A -->|POST /user/register| B[Backend Server]
 B --> C{Validate Input}
@@ -176,7 +176,7 @@ E --> M
 Below is the flowchart that illustrates the execution flow for Login:
 
 ```mermaid
-graph LR
+graph TD
 L@{ shape: circle, label: "Start" } --> A[User Enter username and password]
 A -->|POST /user/login| B[Backend Server]
 B --> C[Validate Input]
